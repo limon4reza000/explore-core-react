@@ -20,8 +20,29 @@ function App() {
       <Device name="Samsung" brand="Samsung" price={20000}></Device>
       <Player name="Sakib" runs="100"></Player>
       <Player name="Tamim"></Player>
-      <Pet></Pet>
+
+      <Books name="Ophekkha" author="Humayun Ahmed" price="400 Tk"></Books>
+      <Books name="Megh Boleche Jabo Jabo" author="Humayun Ahmed" price="450 Tk"></Books>
+      <Books name="Tomake" author="Humayun Ahmed" price="500 Tk"></Books>
+
+      {/* <Pet></Pet> */}
     </>
+  )
+}
+
+function Books ({name, author, price}){
+  return (
+    <div style = {{
+      border: '2px solid blue',
+      padding: '10px',
+      marginTop: '10px',
+      marginBottom: '10px',
+      borderRadius: '20px',
+    }}>
+      <h2>Books : {name}</h2>
+      <p>Author : {author}</p>
+      <p>Price : {price}</p>
+    </div>
   )
 }
 
@@ -40,8 +61,6 @@ function Person(){
     <p style={personStyle} >I am a person : Name : {name}, Age: {age}</p> 
   )
 }
-
-
 
 
 function Student(){
