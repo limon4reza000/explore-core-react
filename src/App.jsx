@@ -11,14 +11,26 @@ function App() {
     <>
       <h1>Vite + React</h1>
       <Person></Person>
+      <Pet></Pet>
     </>
   )
 }
 
 function Person(){
+  const name = "Limon";
+  const age = 23;
   return (
-    <p>I am a person</p> 
+    <p>I am a person : Name : {name}, Age: {age}</p> 
   )
 }
+
+function Pet(){
+  const name = "Tommy";
+  const age = 3;
+  return (
+    <p>I am a pet : Name : {name}, Age: {age}</p> 
+  )
+}
+
 
 export default App
