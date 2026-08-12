@@ -18,6 +18,8 @@ function App() {
       <Device name="iPhone" brand="Apple" price={270000}></Device>
       <Device name="Xiaomi" brand="Xiaomi" price={15000}></Device>
       <Device name="Samsung" brand="Samsung" price={20000}></Device>
+      <Player name="Sakib" runs="100"></Player>
+      <Player name="Tamim"></Player>
       <Pet></Pet>
     </>
   )
@@ -81,9 +83,26 @@ function Device (props) {
       borderRadius: '20px'
     }}>
 
-    <h2>Name : {props.name}</h2>
+    <h2>Device : {props.name}</h2>
     <p>Brand : {props.brand}</p>
     <p>Price : {props.price}</p>
+    </div>
+  )
+}
+
+
+function Player ({name, runs = 0}){
+  return (
+    <div style = {{
+      border: '2px solid salmon',
+      padding: '20px',
+      marginTop: '10px',
+      marginBottom: '10px',
+      borderRadius: '20px'
+    }}>
+      <h2>Player
+      <p>Name : {name}</p> </h2>
+      <p>Runs : {runs}</p>
     </div>
   )
 }
