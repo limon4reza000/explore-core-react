@@ -11,6 +11,7 @@ function App() {
     <>
       <h1>React Core Concepts</h1>
       <Person></Person>
+      <Student></Student>
       <Pet></Pet>
     </>
   )
@@ -19,10 +20,31 @@ function App() {
 function Person(){
   const name = "Limon";
   const age = 23;
+
+  cconst personStyle ={
+  color: "blue",
+  backgroundColor: "lightgray",
+  padding: "10px",
+  borderRadius: "5px"
+}
+
   return (
-    <p>I am a person : Name : {name}, Age: {age}</p> 
+    <p style={personStyle} >I am a person : Name : {name}, Age: {age}</p> 
   )
 }
+
+
+
+
+function Student(){
+  return (
+    <div className='student'>
+      <p>Name : </p>
+      <p>Department :</p>
+    </div>
+  )
+}
+
 
 function Pet(){
   const name = "Tommy";
