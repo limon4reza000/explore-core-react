@@ -1,14 +1,27 @@
 
 import './App.css'
 import ToDo from './Todo'
+import Foods from './Todo'
 
 function App() {
-  
 
+  const time = 50;
   return (
     <>
       <h1>React Core Concepts</h1>
-      <ToDo></ToDo>
+      {/* <ToDo task="Learn React" isActive={true}></ToDo>
+      <ToDo task="Learn JavaScript" isActive={false}></ToDo> */}
+
+      <Foods
+        food="I,m Hungry"
+        isHungry={true}
+        time={time}>
+      </Foods>
+
+      <Foods
+        food="I,m Hungry"
+        isHungry={false} >
+      </Foods>
 
 
       {/* <Person></Person>
@@ -29,9 +42,9 @@ function App() {
   )
 }
 
-function Books ({name, author, price}){
+function Books({ name, author, price }) {
   return (
-    <div style = {{
+    <div style={{
       border: '2px solid blue',
       padding: '10px',
       marginTop: '10px',
@@ -45,24 +58,24 @@ function Books ({name, author, price}){
   )
 }
 
-function Person(){
+function Person() {
   const name = "Limon";
   const age = 23;
 
   const personStyle = {
-  color: "blue",
-  backgroundColor: "lightgray",
-  padding: "10px",
-  borderRadius: "5px"
-}
+    color: "blue",
+    backgroundColor: "lightgray",
+    padding: "10px",
+    borderRadius: "5px"
+  }
 
   return (
-    <p style={personStyle} >I am a person : Name : {name}, Age: {age}</p> 
+    <p style={personStyle} >I am a person : Name : {name}, Age: {age}</p>
   )
 }
 
 
-function Student(){
+function Student() {
   return (
     <div className='student'>
       <p>Name : </p>
@@ -72,10 +85,10 @@ function Student(){
 }
 
 
-function Developer (props){
+function Developer(props) {
   console.log(props);
   return (
-    <div style = {{
+    <div style={{
       border: '2px solid green',
       padding: '10px',
       marginTop: '10px',
@@ -85,15 +98,15 @@ function Developer (props){
 
       <h3>Developer : {props.name} </h3>
       <p>Technology : {props.technology}</p>
-      
+
     </div>
   )
 }
 
-function Device (props) {
+function Device(props) {
   // console.log(props);
   return (
-    <div style = {{
+    <div style={{
       border: '2px solid red',
       padding: '10px',
       marginTop: '10px',
@@ -101,17 +114,17 @@ function Device (props) {
       borderRadius: '20px'
     }}>
 
-    <h2>Device : {props.name}</h2>
-    <p>Brand : {props.brand}</p>
-    <p>Price : {props.price}</p>
+      <h2>Device : {props.name}</h2>
+      <p>Brand : {props.brand}</p>
+      <p>Price : {props.price}</p>
     </div>
   )
 }
 
 
-function Player ({name, runs = 0}){
+function Player({ name, runs = 0 }) {
   return (
-    <div style = {{
+    <div style={{
       border: '2px solid salmon',
       padding: '20px',
       marginTop: '10px',
@@ -119,7 +132,7 @@ function Player ({name, runs = 0}){
       borderRadius: '20px'
     }}>
       <h2>Player
-      <p>Name : {name}</p> </h2>
+        <p>Name : {name}</p> </h2>
       <p>Runs : {runs}</p>
     </div>
   )
@@ -127,11 +140,11 @@ function Player ({name, runs = 0}){
 
 
 
-function Pet(){
+function Pet() {
   const name = "Tommy";
   const age = 3;
   return (
-    <p>I am a pet : Name : {name}, Age: {age}</p> 
+    <p>I am a pet : Name : {name}, Age: {age}</p>
   )
 }
 
