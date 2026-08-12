@@ -1,8 +1,6 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
+
 import './App.css'
+import ToDo from './Todo'
 
 function App() {
   
@@ -10,7 +8,10 @@ function App() {
   return (
     <>
       <h1>React Core Concepts</h1>
-      <Person></Person>
+      <ToDo></ToDo>
+
+
+      {/* <Person></Person>
       <Student></Student>
       <Developer name="Limon" technology="React"></Developer>
       <Developer name="Reza" technology="JavaScript"></Developer>
@@ -20,12 +21,10 @@ function App() {
       <Device name="Samsung" brand="Samsung" price={20000}></Device>
       <Player name="Sakib" runs="100"></Player>
       <Player name="Tamim"></Player>
-
       <Books name="Ophekkha" author="Humayun Ahmed" price="400 Tk"></Books>
       <Books name="Megh Boleche Jabo Jabo" author="Humayun Ahmed" price="450 Tk"></Books>
       <Books name="Tomake" author="Humayun Ahmed" price="500 Tk"></Books>
-
-      {/* <Pet></Pet> */}
+      <Pet></Pet> */}
     </>
   )
 }
