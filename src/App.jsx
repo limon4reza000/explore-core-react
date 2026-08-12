@@ -15,6 +15,9 @@ function App() {
       <Developer name="Limon" technology="React"></Developer>
       <Developer name="Reza" technology="JavaScript"></Developer>
       <Developer name="Jane" technology="Python"></Developer>
+      <Device name="iPhone" brand="Apple" price={270000}></Device>
+      <Device name="Xiaomi" brand="Xiaomi" price={15000}></Device>
+      <Device name="Samsung" brand="Samsung" price={20000}></Device>
       <Pet></Pet>
     </>
   )
@@ -66,6 +69,25 @@ function Developer (props){
     </div>
   )
 }
+
+function Device (props) {
+  // console.log(props);
+  return (
+    <div style = {{
+      border: '2px solid red',
+      padding: '10px',
+      marginTop: '10px',
+      marginBottom: '10px',
+      borderRadius: '20px'
+    }}>
+
+    <h2>Name : {props.name}</h2>
+    <p>Brand : {props.brand}</p>
+    <p>Price : {props.price}</p>
+    </div>
+  )
+}
+
 
 
 function Pet(){
