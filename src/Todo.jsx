@@ -12,8 +12,13 @@
 // }
 
 
+// export default function ToDo({ task, isDone, time = 0}) {
+//     return isDone ?
+//         <li>Done : {task} time : {time} </li>
+//         : <li>Not done : {task} time : {time} </li>
+// }
+
 export default function ToDo({ task, isDone, time = 0}) {
-    return isDone ?
-        <li>Done : {task} time : {time} </li>
-        : <li>Not done : {task} time : {time} </li>
+    return isDone && <li>Done Tasks : {task} time : {time}</li>
 }
+
