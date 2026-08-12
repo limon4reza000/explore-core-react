@@ -11,14 +11,24 @@
 //     return <li>Not done: {food}</li>
 // }
 
-
+//conditional rendering with Ternary operator
 // export default function ToDo({ task, isDone, time = 0}) {
 //     return isDone ?
 //         <li>Done : {task} time : {time} </li>
 //         : <li>Not done : {task} time : {time} </li>
 // }
 
+
+
+//conditional rendering with AND operator
+
+// export default function ToDo({ task, isDone, time = 0}) {
+//     return isDone && <li>Done Tasks : {task} time : {time}</li>
+// }
+
+
+//conditional rendering with OR operator
 export default function ToDo({ task, isDone, time = 0}) {
-    return isDone && <li>Done Tasks : {task} time : {time}</li>
+    return isDone || <li>Not Done Tasks : {task} time : {time}</li>
 }
 
